@@ -1,6 +1,4 @@
-import { Heading } from './components/Heading';
-
-import './styles/gloval.css';
+import './styles/global.css';
 import './styles/theme.css';
 
 export function App() {
@@ -8,16 +6,29 @@ export function App() {
 
   return (
     <>
-      <Heading attr={123} attr2='String'>
-        Ola Mundo Props 1
-      </Heading>
+      <div className='container'>
+        <div className='content'>
+          <section>LOGO</section>
+        </div>
+      </div>
 
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
-        facere quo ad recusandae nam autem excepturi aliquam, ex velit enim
-        tempora, ipsam voluptate veritatis provident officia vitae earum magnam
-        minima!
-      </p>
+      <div className='container'>
+        <div className='content'>
+          <section>MENU</section>
+        </div>
+      </div>
+
+      <div className='container'>
+        <div className='content'>
+          <section>FORM</section>
+        </div>
+      </div>
+
+      <div className='container'>
+        <div className='content'>
+          <section>FOOTER</section>
+        </div>
+      </div>
     </>
   );
 }
