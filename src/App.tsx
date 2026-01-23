@@ -1,3 +1,4 @@
+import { TimerIcon } from 'lucide-react';
 import './styles/global.css';
 import './styles/theme.css';
 
@@ -8,7 +9,10 @@ export function App() {
     <>
       <div className='container'>
         <div className='content'>
-          <section>LOGO</section>
+          <section>
+            <TimerIcon />
+            Chronus
+          </section>
         </div>
       </div>
 
