@@ -1,13 +1,13 @@
 import { Container } from './components/Container';
-import { Heading } from './components/Heading';
+import { Countdown } from './components/CountDown';
+import { DefaultInput } from './components/DefaultInput';
 import { Logo } from './components/Logo';
+import { Menu } from './components/Menu';
 
 import './styles/global.css';
 import './styles/theme.css';
 
 export function App() {
-  console.log('Oi');
-
   return (
     <>
       <Container>
@@ -15,7 +15,32 @@ export function App() {
       </Container>
 
       <Container>
-        <Heading>MENU</Heading>
+        <Menu />
+      </Container>
+
+      <Container>
+        <Countdown />
+      </Container>
+
+      <Container>
+        <form className='form' action=''>
+          <div className='formRow'>
+            <DefaultInput labelText='Task' id='meuInput' type='text' />
+          </div>
+
+          <div className='formRow'>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+
+          <div className='formRow'>
+            <p>Ciclos:</p>
+            <p>0 0 0 0 0 0 0</p>
+          </div>
+
+          <div className='formRow'>
+            <button>Enviar</button>
+          </div>
+        </form>
       </Container>
     </>
   );
